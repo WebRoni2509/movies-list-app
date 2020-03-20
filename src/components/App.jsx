@@ -9,10 +9,7 @@ class App extends React.Component {
     this.state = {
       movies: moviesData,
       moviesWillWatch: []
-    }
-
-    
-      
+    } 
   }
 
   removeMovie = movie =>{
