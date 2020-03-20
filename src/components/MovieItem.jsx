@@ -2,7 +2,6 @@ import React from 'react';
 
 const MovieItem = (props) => {
     const {movie, removeMovie, addMoviesToWillWatch} = props;
-  
     return(    
         <div className="card">
             {/* <button 
