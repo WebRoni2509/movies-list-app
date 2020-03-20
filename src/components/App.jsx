@@ -23,9 +23,19 @@ class App extends React.Component {
   }
 
   addMoviesToWillWatch = movie => {
-    const updateMoviesToWillWatch = [...this.state.moviesWillWatch];
-    updateMoviesToWillWatch.push(movie)
+    const updateMoviesToWillWatch = [...this.state.moviesWillWatch, movie];
+   
 
+    this.setState({
+      moviesWillWatch: updateMoviesToWillWatch
+    })
+  }
+
+  removeMovieFromWillWatch = movie =>{
+    const updateMoviesToWillWatch = this.state.moviesWillWatch.filter(function(item){
+      return item.id !== movie.id;
+    })
+    
     this.setState({
       moviesWillWatch: updateMoviesToWillWatch
     })
@@ -42,8 +52,9 @@ class App extends React.Component {
                   <div className="col-6 mb-4" key={movie.id}>   
                     <MovieItem 
                     movie={movie} 
-                    removeMovie={this.removeMovie}
+                    // removeMovie={this.removeMovie}
                     addMoviesToWillWatch={this.addMoviesToWillWatch}
+                    removeMovieFromWillWatch={this.removeMovieFromWillWatch}
                     />
                   </div>
                 )
