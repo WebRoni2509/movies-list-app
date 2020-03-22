@@ -1,0 +1,11 @@
+
+body{
+    background: #19001c;
+}
+.card{
+    -webkit-box-shadow: 0 0 20px 0 #000000;
+    box-shadow: 0 0 20px 0 #000000;
+}
+.favorites-title{
+    color: #fff;
+}

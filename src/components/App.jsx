@@ -24,7 +24,7 @@ class App extends React.Component {
 
   addMoviesToWillWatch = movie => {
     const updateMoviesToWillWatch = [...this.state.moviesWillWatch, movie];
-   
+  
 
     this.setState({
       moviesWillWatch: updateMoviesToWillWatch
@@ -49,7 +49,7 @@ class App extends React.Component {
             <div className="row">
               {this.state.movies.map(movie => {
                 return (
-                  <div className="col-6 mb-4" key={movie.id}>   
+                  <div className="col-lg-4 col-md-6 mb-4" key={movie.id}>   
                     <MovieItem 
                     movie={movie} 
                     // removeMovie={this.removeMovie}
@@ -62,7 +62,12 @@ class App extends React.Component {
             </div>
           </div>
           <div className="col-3">
-            <p>Will Watch: {this.state.moviesWillWatch.length}</p>
+            <h3 className="favorites-title">Will Watch: {this.state.moviesWillWatch.length}</h3>
+            <ul className="list-group">
+              {this.state.moviesWillWatch.map(movie => 
+                <li className="list-group-item">{movie.title}</li>
+              )}
+            </ul>
           </div>
         </div>
       </div>
