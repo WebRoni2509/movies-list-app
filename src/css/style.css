@@ -9,3 +9,7 @@ body{
 .favorites-title{
     color: #fff;
 }
+.will-watch-box{
+    position: fixed;
+    max-width: 250px;
+}
