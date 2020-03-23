@@ -26,31 +26,31 @@ class MovieItem extends React.Component {
             <h6 className="card-title">{movie.title}</h6>
             <div className="d-flex justify-content-between align-items-center">
               <p className="mb-0">Rating: {movie.vote_average}</p>
+              <div className="add-to-watchlist">
               {this.state.willWatch === true ? (
-              <button 
-                  type="button" 
-                  className="btn btn-success"
-                  onClick={()=> {
-                    this.setState({
-                      willWatch: false
-                   });
-                   removeMovieFromWillWatch(movie)}}>
-                  Remove Will Watch
-              </button>
+                <div className="remove-fav">
+                  <i className="fa fa-thumbs-up"
+                    onClick={()=> {
+                      this.setState({
+                        willWatch: false
+                      });
+                      removeMovieFromWillWatch(movie)}}>
+                  </i>
+                  <span className='add-to-fav-tooltip'>Remove from favorites</span>  
+                </div>
               ):( 
-            
-              <button 
-                  type="button" 
-                  className="btn btn-secondary"
-                  onClick={() => {
-                    this.setState({
-                      willWatch: true
-                    });
-  
-                  addMoviesToWillWatch(movie)}}>
-                  Will Watch
-              </button>
+                <div className="add-fav">
+                  <i className="fa fa-thumbs-o-up"
+                    onClick={() => {
+                      this.setState({
+                        willWatch: true
+                      });
+                      addMoviesToWillWatch(movie)}}>
+                  </i>
+                  <span className='add-to-fav-tooltip'>Add to favorites</span>
+                </div>
               )}
+              </div>
             </div>
           {/* <p>{movie.overview}</p> */}
           </div>

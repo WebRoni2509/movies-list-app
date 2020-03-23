@@ -5,6 +5,10 @@ body{
 .card{
     -webkit-box-shadow: 0 0 20px 0 #000000;
     box-shadow: 0 0 20px 0 #000000;
+    background: #f2f2f2;
+    /* color: #fff;
+    overflow: hidden;
+    border: solid 1px #666; */ 
 }
 .favorites-title{
     color: #fff;
@@ -12,4 +16,48 @@ body{
 .will-watch-box{
     position: fixed;
     max-width: 250px;
+}
+.add-to-watchlist .fa{
+    font-size: 30px;
+    color: #333;
+    transition: color .5s ease;
+}
+.add-to-watchlist .fa.fa-thumbs-up{
+    color: #0bb364;
+    transition: color .5s ease;
+}
+.add-fav, .remove-fav{
+    position: relative;
+}
+.add-to-fav-tooltip {
+    opacity: 0;
+    position: absolute;
+    top: -7px;
+    right: calc(100% + 15px);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    background: #333;
+    white-space: nowrap;
+    transition: opacity .3s ease;
+    z-index: 0;
+}
+.add-to-fav-tooltip::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -10px;
+    top:50%;
+    transform: translate(0, -50%);
+    border-top: 7px solid transparent;
+    border-left: 10px solid #333;
+    border-bottom: 7px solid transparent;
+}
+
+
+.add-fav .fa:hover+.add-to-fav-tooltip, .remove-fav .fa:hover+.add-to-fav-tooltip{
+    opacity: 1;
+    transition: opacity .3s ease;
+    z-index: 10;
 }

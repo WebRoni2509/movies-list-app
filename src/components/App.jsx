@@ -1,6 +1,7 @@
 import React from 'react';
 // import moviesDa  ta from '../moviesData';
 import MovieItem from './MovieItem';
+import MovieTabs from './MovieTabs';
 import {API_URL, API_KEY_3} from '../utils/api';
 
 class App extends React.Component {
@@ -15,7 +16,7 @@ class App extends React.Component {
 
   componentDidMount() {
     const _this = this;
-    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}`).then((response) => {
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=popularity.desc`).then((response) => {
       
       return response.json()
     }).then(function(data){
@@ -55,6 +56,11 @@ class App extends React.Component {
       <div className="container mt-4">
         <div className="row">
           <div className="col-9">
+            <div className="row mb-4">
+              <div className="col-12">
+                <MovieTabs />
+              </div>
+            </div>
             <div className="row">
               {this.state.movies.map(movie => {
                 return (
