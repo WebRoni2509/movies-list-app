@@ -19,20 +19,18 @@ const MovieTabs = (props) => {
             </li>
             <li className="nav-item text-white">
                 <a href="#"
-                className={`nav-link ${sort_by === 'vote_average.desc' ? 'active': ''}`}
-                onClick={handleClick('vote_average.desc')}
+                className={`nav-link ${sort_by === 'revenue.desc' ? 'active': ''}`}
+                onClick={handleClick('revenue.desc')}
                 >
-                
-                Vote Average
+                Revenue
                 </a>
             </li>
             <li className="nav-item text-white">
                 <a href="#"
-                className={`nav-link ${sort_by === 'release_date.desc' ? 'active': ''}`}
-                onClick={handleClick('release_date.desc')}
+                className={`nav-link ${sort_by === 'vote_count.desc' ? 'active': ''}`}
+                onClick={handleClick('vote_count.desc')}
                 >
-                
-                Release Date
+                Vote Count
                 </a>
             </li>   
         </ul>
