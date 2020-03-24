@@ -1,17 +1,40 @@
 import React from 'react';
 
 const MovieTabs = (props) => {
+    const {sort_by, updateSortBy} = props;
+    const handleClick = value => {
+        return event => {
+            updateSortBy(value)
+        }
+    }
     return(
-        <ul className="tabs nav nav-pills ">
+        <ul className="nav nav-pills ">
             <li className="nav-item text-white" >
-                <div className="nav-link active">Now playing</div>
+                <a href="#"
+                className={`nav-link ${sort_by === 'popularity.desc' ? 'active': ''}`}
+                onClick={handleClick('popularity.desc')}
+                >   
+                Popular
+                </a>
             </li>
             <li className="nav-item text-white">
-                <div className="nav-link">Upcoming</div>
+                <a href="#"
+                className={`nav-link ${sort_by === 'vote_average.desc' ? 'active': ''}`}
+                onClick={handleClick('vote_average.desc')}
+                >
+                
+                Vote Average
+                </a>
             </li>
             <li className="nav-item text-white">
-                <div className="nav-link">Popular</div>
-            </li>
+                <a href="#"
+                className={`nav-link ${sort_by === 'release_date.desc' ? 'active': ''}`}
+                onClick={handleClick('release_date.desc')}
+                >
+                
+                Release Date
+                </a>
+            </li>   
         </ul>
     )
 }

@@ -10,30 +10,43 @@ class App extends React.Component {
 
     this.state = {
       movies: [],
-      moviesWillWatch: []
+      moviesWillWatch: [],
+      sort_by: 'popularity.desc'
     } 
   }
 
   componentDidMount() {
     const _this = this;
-    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=popularity.desc`).then((response) => {
-      
-      return response.json()
-    }).then(function(data){
+    fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`)
+    .then((response) => {return response.json()})
+    .then(function(data){
       _this.setState({
         movies: data.results
       })
     })
   }
 
-  removeMovie = movie =>{
-    const updateMovies = this.state.movies.filter(function(item){
-      return item.id !== movie.id;
-    })
-    this.setState({
-      movies: updateMovies
-    })
+  componentDidUpdate(pervProps, pervState){
+    const _this = this;
+    if(pervState.sort_by !== this.state.sort_by) {
+      fetch(`${API_URL}/discover/movie?api_key=${API_KEY_3}&sort_by=${this.state.sort_by}`)
+      .then((response) => {return response.json()})
+      .then(function(data){
+        _this.setState({
+          movies: data.results
+        })
+      })
+    }
   }
+
+  // removeMovie = movie =>{
+  //   const updateMovies = this.state.movies.filter(function(item){
+  //     return item.id !== movie.id;
+  //   })
+  //   this.setState({
+  //     movies: updateMovies
+  //   })
+  // }
 
   addMoviesToWillWatch = movie => {
     const updateMoviesToWillWatch = [...this.state.moviesWillWatch, movie];
@@ -51,14 +64,21 @@ class App extends React.Component {
     })
   }
 
+  updateSortBy = value => {
+    this.setState({
+      sort_by: value
+    })
+  }
+
   render() {
+    console.log(this.state.sort_by)
     return(
       <div className="container mt-4">
         <div className="row">
           <div className="col-9">
             <div className="row mb-4">
               <div className="col-12">
-                <MovieTabs />
+                <MovieTabs sort_by={this.state.sort_by} updateSortBy={this.updateSortBy}/>
               </div>
             </div>
             <div className="row">

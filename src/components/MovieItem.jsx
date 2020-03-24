@@ -8,7 +8,7 @@ class MovieItem extends React.Component {
     }
   }
   render(){
-      const {movie, removeMovie, addMoviesToWillWatch, removeMovieFromWillWatch} = this.props;
+      const {movie, /*removeMovie,*/ addMoviesToWillWatch, removeMovieFromWillWatch} = this.props;
       return(    
           <div className="card">
               {/* <button 
