@@ -36,5 +36,6 @@
   },
   "devDependencies": {
     "gh-pages": "^2.2.0"
-  }
+  },
+  "homepage": "https://WebRoni2509.github.io/movies-list-app"
 }
