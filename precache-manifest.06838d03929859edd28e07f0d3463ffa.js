@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "187c7efaf94a5f4cebc55e226236f79d",
+    "revision": "f102276d2418d6731adab070a14c119e",
     "url": "/movies-list-app/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movies-list-app/static/css/2.de424728.chunk.css"
   },
   {
-    "revision": "644fea74d2fc93a06c18",
-    "url": "/movies-list-app/static/css/main.15f9e6d0.chunk.css"
+    "revision": "e18835449fb95e9fddd7",
+    "url": "/movies-list-app/static/css/main.fb5846ea.chunk.css"
   },
   {
     "revision": "66c27aacd0219160d231",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movies-list-app/static/js/2.44cc933c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "644fea74d2fc93a06c18",
+    "revision": "e18835449fb95e9fddd7",
     "url": "/movies-list-app/static/js/main.f129cb10.chunk.js"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movies-list-app/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
-    "revision": "912ec66d7572ff821749319396470bde",
-    "url": "/movies-list-app/static/media/fontawesome-webfont.912ec66d.svg"
+    "revision": "acf3dcb7ff752b5296ca23ba2c7c2606",
+    "url": "/movies-list-app/static/media/fontawesome-webfont.acf3dcb7.svg"
   },
   {
     "revision": "af7ae505a9eed503f8b8e6982036873e",
