@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.4be46134.chunk.css",
-    "main.js": "/static/js/main.f129cb10.chunk.js",
-    "main.js.map": "/static/js/main.f129cb10.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.78116e42.js",
-    "runtime-main.js.map": "/static/js/runtime-main.78116e42.js.map",
-    "static/css/2.de424728.chunk.css": "/static/css/2.de424728.chunk.css",
-    "static/js/2.44cc933c.chunk.js": "/static/js/2.44cc933c.chunk.js",
-    "static/js/2.44cc933c.chunk.js.map": "/static/js/2.44cc933c.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.57065e783f83f6ff6c8917dce708eda1.js": "/precache-manifest.57065e783f83f6ff6c8917dce708eda1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.de424728.chunk.css.map": "/static/css/2.de424728.chunk.css.map",
-    "static/css/main.4be46134.chunk.css.map": "/static/css/main.4be46134.chunk.css.map",
-    "static/js/2.44cc933c.chunk.js.LICENSE.txt": "/static/js/2.44cc933c.chunk.js.LICENSE.txt",
-    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff"
+    "main.css": "/movies-list-app/static/css/main.15f9e6d0.chunk.css",
+    "main.js": "/movies-list-app/static/js/main.f129cb10.chunk.js",
+    "main.js.map": "/movies-list-app/static/js/main.f129cb10.chunk.js.map",
+    "runtime-main.js": "/movies-list-app/static/js/runtime-main.7934952d.js",
+    "runtime-main.js.map": "/movies-list-app/static/js/runtime-main.7934952d.js.map",
+    "static/css/2.de424728.chunk.css": "/movies-list-app/static/css/2.de424728.chunk.css",
+    "static/js/2.44cc933c.chunk.js": "/movies-list-app/static/js/2.44cc933c.chunk.js",
+    "static/js/2.44cc933c.chunk.js.map": "/movies-list-app/static/js/2.44cc933c.chunk.js.map",
+    "index.html": "/movies-list-app/index.html",
+    "precache-manifest.61d594dd94e505cd1b021c86ac309dee.js": "/movies-list-app/precache-manifest.61d594dd94e505cd1b021c86ac309dee.js",
+    "service-worker.js": "/movies-list-app/service-worker.js",
+    "static/css/2.de424728.chunk.css.map": "/movies-list-app/static/css/2.de424728.chunk.css.map",
+    "static/css/main.15f9e6d0.chunk.css.map": "/movies-list-app/static/css/main.15f9e6d0.chunk.css.map",
+    "static/js/2.44cc933c.chunk.js.LICENSE.txt": "/movies-list-app/static/js/2.44cc933c.chunk.js.LICENSE.txt",
+    "static/media/font-awesome.min.css": "/movies-list-app/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.78116e42.js",
+    "static/js/runtime-main.7934952d.js",
     "static/css/2.de424728.chunk.css",
     "static/js/2.44cc933c.chunk.js",
-    "static/css/main.4be46134.chunk.css",
+    "static/css/main.15f9e6d0.chunk.css",
     "static/js/main.f129cb10.chunk.js"
   ]
 }
